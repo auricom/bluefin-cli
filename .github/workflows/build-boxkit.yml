@@ -1,17 +1,17 @@
-name: build-boxkit
+name: build-bluefin-toolbox
 on:
   pull_request:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * TUE'
+    - cron: 26 7,19 * * * # (26 minutes after ublue-os/toolbox/bluefin-cli builds)
   push:
     branches:
       - main
     paths-ignore:
       - '**/README.md'
 env:
-    IMAGE_NAME: boxkit
+    IMAGE_NAME: bluefin-cli
     IMAGE_TAGS: latest
     IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
 
