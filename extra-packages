@@ -9,6 +9,7 @@ fd
 fish
 fzf
 gawk
+glibc-locale-ff
 mc
 nano
 nmap
