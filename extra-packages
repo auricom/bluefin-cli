@@ -12,6 +12,7 @@ gawk
 glibc-locale-ff
 helix
 jq
+k9s
 mc
 nano
 nmap
