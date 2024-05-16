@@ -9,7 +9,7 @@ COPY ./extra-packages /extra-packages
 
 # Remove default fish bling script, Install extra packages, nix-portable and devbox
 RUN  \
-    rm usr/share/fish/vendor_conf.d/bling.fish && \
+    rm /usr/share/fish/vendor_conf.d/bling.fish /usr/share/fish/vendor_conf.d/brew.fish && \
     grep -v '^#' /extra-packages | xargs apk add && \
     rm /extra-packages && \
     wget --quiet --output-document /usr/bin/nix-portable \
